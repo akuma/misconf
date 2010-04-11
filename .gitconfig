@@ -1,0 +1,42 @@
+[user]
+    name = Akuma Huang 
+    email = ihuangwj@gmail.com
+
+[alias]
+    ci = commit -a
+    co = checkout
+    st = status
+    br = branch
+    unstage = reset HEAD
+    last = log -1 HEAD 
+    glog = log --pretty=format:'%h %s' --graph
+    praise = blame
+
+[apply]
+    whitespace = strip
+
+[core]
+    editor = emacs
+
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    ui = true
+    pager = true
+
+[color "branch"]
+    current = green reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = cyan
+    changed = green
+    untracked = red bold
