@@ -1,3 +1,6 @@
+;; 在 Windows 下使用需要添加的 HOME 设置
+;(setenv "HOME" "D:/Documents/My_home")
+
 ;; 关闭烦人的出错时的提示声
 (setq visible-bell t)
 
