@@ -1,33 +1,33 @@
-;; ÔÚ Windows ÏÂÊ¹ÓÃĞèÒªÌí¼ÓµÄ HOME ÉèÖÃ
+;; åœ¨ Windows ä¸‹ä½¿ç”¨éœ€è¦æ·»åŠ çš„ HOME è®¾ç½®
 ;(setenv "HOME" "D:/Documents/My_home")
 
-;; ÉèÖÃÏµÍ³±àÂë
+;; è®¾ç½®ç³»ç»Ÿç¼–ç 
 (set-language-environment 'Chinese-GB)
 ;(set-buffer-file-coding-system 'utf-8)
 ;(set-default-coding-systems 'utf-8)
 
-;; ¹Ø±Õ·³ÈËµÄ³ö´íÊ±µÄÌáÊ¾Éù
+;; å…³é—­çƒ¦äººçš„å‡ºé”™æ—¶çš„æç¤ºå£°
 (setq visible-bell t)
 
-;; ¹Ø±ÕÆğ¶¯Ê±µÄÄÇ¸ö¡°¿ª»ú»­Ãæ¡±
+;; å…³é—­èµ·åŠ¨æ—¶çš„é‚£ä¸ªâ€œå¼€æœºç”»é¢â€
 (setq inhibit-startup-message t)
 
-;; ÏÔÊ¾ÁĞºÅ
+;; æ˜¾ç¤ºåˆ—å·
 (setq column-number-mode t)
 
-;; ÉèÖÃÄ¬ÈÏ¹¤×÷Ä¿Â¼
+;; è®¾ç½®é»˜è®¤å·¥ä½œç›®å½•
 (setq default-directory "~") 
 
-;; ²»ÒªÔÚÊó±êµã»÷µÄÄÇ¸öµØ·½²åÈë¼ôÌù°åÄÚÈİ
+;; ä¸è¦åœ¨é¼ æ ‡ç‚¹å‡»çš„é‚£ä¸ªåœ°æ–¹æ’å…¥å‰ªè´´æ¿å†…å®¹
 (setq mouse-yank-at-point t)
 
-;; ÓÃÒ»¸öºÜ´óµÄ kill ring
+;; ç”¨ä¸€ä¸ªå¾ˆå¤§çš„ kill ring
 (setq kill-ring-max 200)
 
-;; °Ñ fill-column ÉèÎª 60. ÕâÑùµÄÎÄ×Ö¸üºÃ¶Á
+;; æŠŠ fill-column è®¾ä¸º 60. è¿™æ ·çš„æ–‡å­—æ›´å¥½è¯»
 (setq default-fill-column 60)
 
-;; ²»ÓÃ TAB ×Ö·ûÀ´ indent
+;; ä¸ç”¨ TAB å­—ç¬¦æ¥ indent
 (setq standard-indent 4)
 (setq indent-tabs-mode nil)
 (setq default-tab-width 4)
@@ -36,71 +36,71 @@
 ;(loop for x downfrom 40 to 1 do
 ;;      (setq tab-stop-list (cons (* x 4) tab-stop-list))) 
 
-;; ÉèÖÃ sentence-end ¿ÉÒÔÊ¶±ğÖĞÎÄ±êµã
-(setq sentence-end "\\([¡££¡£¿]\\|¡­¡­\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
+;; è®¾ç½® sentence-end å¯ä»¥è¯†åˆ«ä¸­æ–‡æ ‡ç‚¹
+(setq sentence-end "\\([ã€‚ï¼ï¼Ÿ]\\|â€¦â€¦\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
 
-;; ¿ÉÒÔµİ¹éµÄÊ¹ÓÃ minibuffer
+;; å¯ä»¥é€’å½’çš„ä½¿ç”¨ minibuffer
 (setq enable-recursive-minibuffers t)
 
-;; ·ÀÖ¹Ò³Ãæ¹ö¶¯Ê±Ìø¶¯
+;; é˜²æ­¢é¡µé¢æ»šåŠ¨æ—¶è·³åŠ¨
 (setq scroll-margin 3
       scroll-conservatively 10000)
 
-;; °ÑÈ±Ê¡µÄ major mode ÉèÖÃÎª text-mode
+;; æŠŠç¼ºçœçš„ major mode è®¾ç½®ä¸º text-mode
 (setq default-major-mode 'text-mode)
 
-;; À¨ºÅÆ¥ÅäÊ±ÏÔÊ¾ÁíÍâÒ»±ßµÄÀ¨ºÅ£¬¶ø²»ÊÇ·³ÈËµÄÌøµ½ÁíÒ»¸öÀ¨ºÅ
+;; æ‹¬å·åŒ¹é…æ—¶æ˜¾ç¤ºå¦å¤–ä¸€è¾¹çš„æ‹¬å·ï¼Œè€Œä¸æ˜¯çƒ¦äººçš„è·³åˆ°å¦ä¸€ä¸ªæ‹¬å·
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
 
-;; ¹â±ê¿¿½üÊó±êÖ¸ÕëÊ±£¬ÈÃÊó±êÖ¸Õë×Ô¶¯ÈÃ¿ª£¬±ğµ²×¡ÊÓÏß
+;; å…‰æ ‡é è¿‘é¼ æ ‡æŒ‡é’ˆæ—¶ï¼Œè®©é¼ æ ‡æŒ‡é’ˆè‡ªåŠ¨è®©å¼€ï¼Œåˆ«æŒ¡ä½è§†çº¿
 (mouse-avoidance-mode 'animate)
 
-;; ÔÚ±êÌâÀ¸ÏÔÊ¾ buffer µÄÃû×Ö
+;; åœ¨æ ‡é¢˜æ æ˜¾ç¤º buffer çš„åå­—
 (setq frame-title-format "emacs@%b")
 
-;; ÈÃ Emacs ¿ÉÒÔÖ±½Ó´ò¿ªºÍÏÔÊ¾Í¼Æ¬
+;; è®© Emacs å¯ä»¥ç›´æ¥æ‰“å¼€å’Œæ˜¾ç¤ºå›¾ç‰‡
 (auto-image-file-mode)
 
-;; ½øĞĞÓï·¨¼ÓÁÁ
+;; è¿›è¡Œè¯­æ³•åŠ äº®
 (global-font-lock-mode t)
 
-;; °ÑÕâĞ©È±Ê¡½ûÓÃµÄ¹¦ÄÜ´ò¿ª
+;; æŠŠè¿™äº›ç¼ºçœç¦ç”¨çš„åŠŸèƒ½æ‰“å¼€
 (put 'set-goal-column 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
-;; ÉèÖÃÒ»ÏÂ±¸·İÊ±µÄ°æ±¾¿ØÖÆ£¬ÕâÑù¸ü¼Ó°²È«
+;; è®¾ç½®ä¸€ä¸‹å¤‡ä»½æ—¶çš„ç‰ˆæœ¬æ§åˆ¶ï¼Œè¿™æ ·æ›´åŠ å®‰å…¨
 (setq version-control t)
 (setq kept-new-versions 3)
 (setq delete-old-versions t)
 (setq kept-old-versions 2)
 (setq dired-kept-versions 1)
 
-;; ÉèÖÃÓĞÓÃµÄ¸öÈËĞÅÏ¢
+;; è®¾ç½®æœ‰ç”¨çš„ä¸ªäººä¿¡æ¯
 (setq user-full-name "akuma")
 (setq user-mail-address "ihuangwj@gmail.com")
 
-;; ÈÃ dired ¿ÉÒÔµİ¹éµÄ¿½±´ºÍÉ¾³ıÄ¿Â¼
+;; è®© dired å¯ä»¥é€’å½’çš„æ‹·è´å’Œåˆ é™¤ç›®å½•
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
 
-;; ²»ÒªÉú³ÉÁÙÊ±ÎÄ¼ş
+;; ä¸è¦ç”Ÿæˆä¸´æ—¶æ–‡ä»¶
 (setq-default make-backup-files nil)
 
-;; ÏÔÊ¾Ê±¼ä
+;; æ˜¾ç¤ºæ—¶é—´
 (display-time)
 
-;; ÆôÓÃĞ¡¹¤¾ß²Ëµ¥À¸
+;; å¯ç”¨å°å·¥å…·èœå•æ 
 (tool-bar-mode -1)
 
-;; ¼ÇÂ¼ÎÄ¼şĞŞ¸ÄÊ±¼ä
+;; è®°å½•æ–‡ä»¶ä¿®æ”¹æ—¶é—´
 (add-hook 'write-file-hooks 'time-stamp)
 (setq time-stamp-format "%:u %02m/%02d/%04y %02H:%02M:%02S")
 
-;; ÉèÖÃÑÕÉ«Ö÷Ìâ
+;; è®¾ç½®é¢œè‰²ä¸»é¢˜
 (add-to-list 'load-path "D:/Program Files/emacs-23.1/lisp/color-theme")
 (require 'color-theme)
 (color-theme-initialize)
