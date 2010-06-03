@@ -103,13 +103,19 @@
 (require 'color-theme)
 (color-theme-initialize)
 ;(color-theme-kingsajz)
-;(color-theme-robin-hood)
-(color-theme-zenburn)
+(color-theme-robin-hood)
+;(color-theme-zenburn)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 (column-number-mode t)
 (transient-mark-mode t)
 ;(setq lazy-lock-defer-on-scrolling t)
+
+;; 加载个人插件
+(add-to-list 'load-path "~/.emacs.d/plugins")
+
+;; 设置 YASnippet
+(require 'yasnippet-bundle)
 
 ;; 设置 Python mod
 (autoload 'python-mode "python-mode" "Python Mode." t)
