@@ -27,14 +27,10 @@
 ;; 把 fill-column 设为 60. 这样的文字更好读
 (setq default-fill-column 60)
 
-;; 不用 TAB 字符来 indent
-(setq standard-indent 4)
-(setq indent-tabs-mode nil)
-(setq default-tab-width 4)
-(setq tab-width 4)
-(setq tab-stop-list ())
-;(loop for x downfrom 40 to 1 do
-;;      (setq tab-stop-list (cons (* x 4) tab-stop-list))) 
+;; 设置 Tab 的长度为4个字符
+(setq-default tab-width 4)
+;; 设置将Tab键插入制表符替换为等长度的空格
+(setq-default indent-tabs-mode nil)
 
 ;; 设置 sentence-end 可以识别中文标点
 (setq sentence-end "\\([。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
@@ -63,8 +59,10 @@
 ;; 让 Emacs 可以直接打开和显示图片
 (auto-image-file-mode)
 
-;; 进行语法加亮
+;; 设置语法加亮
 (global-font-lock-mode t)
+(setq font-lock-maximum-decoration t)
+;(setq font-lock-support-mode 'lazy-lock-mode)
 
 ;; 把这些缺省禁用的功能打开
 (put 'set-goal-column 'disabled nil)
@@ -104,13 +102,23 @@
 (add-to-list 'load-path "D:/Program Files/emacs-23.1/lisp/color-theme")
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-kingsajz)
+;(color-theme-kingsajz)
 ;(color-theme-robin-hood)
-;(color-theme-gnome2)
+(color-theme-zenburn)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 (column-number-mode t)
 (transient-mark-mode t)
 ;(setq lazy-lock-defer-on-scrolling t)
-;(setq font-lock-support-mode 'lazy-lock-mode)
-;(setq font-lock-maximum-decoration t)
+
+;; 设置 Python mod
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(setq auto-mode-alist
+      (cons '("\\.py$" . python-mode) auto-mode-alist))
+(setq interpreter-mode-alist
+      (cons '("python" . python-mode) interpreter-mode-alist))
+(add-hook 'python-mode-hook
+          (lambda ()
+            (set (make-variable-buffer-local 'beginning-of-defun-function)
+                 'py-beginning-of-def-or-class)
+            (setq outline-regexp "def\\|class ")))
