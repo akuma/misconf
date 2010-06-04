@@ -98,14 +98,6 @@
 (add-hook 'write-file-hooks 'time-stamp)
 (setq time-stamp-format "%:u %02m/%02d/%04y %02H:%02M:%02S")
 
-;; 设置颜色主题
-(add-to-list 'load-path "D:/Program Files/emacs-23.1/lisp/color-theme")
-(require 'color-theme)
-(color-theme-initialize)
-;(color-theme-kingsajz)
-(color-theme-robin-hood)
-;(color-theme-zenburn)
-
 (fset 'yes-or-no-p 'y-or-n-p)
 (column-number-mode t)
 (transient-mark-mode t)
@@ -113,6 +105,14 @@
 
 ;; 加载个人插件
 (add-to-list 'load-path "~/.emacs.d/plugins")
+
+;; 设置颜色主题
+(add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-zenburn)
+;(color-theme-robin-hood)
+;(color-theme-kingsajz)
 
 ;; 设置 YASnippet
 (require 'yasnippet-bundle)
