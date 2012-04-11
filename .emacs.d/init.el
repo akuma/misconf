@@ -35,10 +35,12 @@
 
 ;; Misc settings
 (display-time)
-(menu-bar-mode t)
-(tool-bar-mode -1)
 (global-linum-mode t)
 (setq linum-format " %d ")
+(menu-bar-mode t)
+(tool-bar-mode -1)
+(tabbar-mode t)
+(require 'tabbar-ruler)
 
 ;; Auto complete
 (require 'auto-complete-config)
