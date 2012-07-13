@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- default ordered fallback list - fallback entity has to be PostScript name -->
+	<key>default</key>
+	<array>
+		<string>LucidaGrande</string> <!-- MAKE sure this matches the kCTFontSystemFontType in CTFontDescriptorCreateForUIType() & TDescriptorSourceImp::CreateDefaultDescriptor()! -->
+		<string>AppleSymbolsFB</string>
+		<string>GeezaPro</string>
+		<string>Thonburi</string>
+		<string>Kokonor</string><!-- Tibetan, Kailasa is the equivalent on iOS -->
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use AquaHiraKaku, which uses AquaKana for Kana and HiraKakuProN for Kanji -->
+				<string>ja</string>
+				<string>AquaHiraKaku</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use STHeiti TC -->
+				<string>zh-Hant</string>
+				<string>STHeitiTC-Light</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STHeiti SC -->
+				<string>zh-Hans</string>
+				<string>STHeitiSC-Light</string>
+			</array>
+			<array>
+				<!-- for Korean, use AppleGothic Regular -->
+				<string>ko</string>
+				<string>AppleGothic</string>
+			</array>
+		</array>
+		<string>BanglaSangamMN</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaSangamMN</string>
+		<string>KhmerSangamMN</string>
+		<string>LaoSangamMN</string>
+		<string>MalayalamSangamMN</string>
+		<string>MyanmarSangamMN</string>
+		<string>OriyaSangamMN</string>
+		<string>SinhalaSangamMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguSangamMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+	
+	<!-- ordered fallback list for sans-serif style - fallback entity has to be PostScript name -->
+	<key>sans-serif</key>
+	<array>
+		<string>LucidaGrande</string>
+		<string>AppleSymbolsFB</string>
+		<string>GeezaPro</string>
+		<string>Thonburi</string>
+		<string>Kailasa</string>
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use Hiragino Kaku Gothic ProN W3 -->
+				<string>ja</string>
+				<string>HiraKakuProN-W3</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use STHeiti TC -->
+				<string>zh-Hant</string>
+				<string>STHeitiTC-Light</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STHeiti SC -->
+				<string>zh-Hans</string>
+				<string>STHeitiSC-Light</string>
+			</array>
+			<array>
+				<!-- for Korean, use AppleGothic Regular -->
+				<string>ko</string>
+				<string>AppleGothic</string>
+			</array>
+		</array>
+		<string>BanglaSangamMN</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaSangamMN</string>
+		<string>KhmerSangamMN</string>
+		<string>LaoSangamMN</string>
+		<string>MalayalamSangamMN</string>
+		<string>MyanmarSangamMN</string>
+		<string>OriyaSangamMN</string>
+		<string>SinhalaSangamMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguSangamMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+
+	<!-- ordered fallback list for serif style - fallback entity has to be PostScript name -->
+	<key>serif</key>
+	<array>
+		<string>Times-Roman</string>
+		<string>Symbol</string>
+		<string>LucidaGrande</string>
+		<string>AppleSymbolsFB</string>
+		<string>GeezaPro</string>
+		<string>Thonburi</string>
+		<string>Kokonor</string><!-- Tibetan, Kailasa is the equivalent on iOS -->
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use Hiragino Mincho ProN W3 -->
+				<string>ja</string>
+				<string>HiraMinProN-W3</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use LiSong Pro -->
+				<string>zh-Hant</string>
+				<string>LiSongPro</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STSong -->
+				<string>zh-Hans</string>
+				<string>STSong</string>
+			</array>
+			<array>
+				<!-- for Korean, use Apple Myungjo  -->
+				<string>ko</string>
+				<string>AppleMyungjo</string>
+			</array>
+		</array>
+		<string>BanglaMN</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaMN</string>
+		<string>KhmerMN</string>
+		<string>LaoMN</string>
+		<string>MalayalamMN</string>
+		<string>MyanmarMN</string>
+		<string>OriyaMN</string>
+		<string>SinhalaMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+
+	<!-- ordered fallback list for monospace style - fallback entity has to be PostScript name -->
+	<key>monospace</key>
+	<array>
+		<string>Monaco</string>
+		<string>AppleSymbolsFB</string>
+		<string>LucidaGrande</string>
+		<string>Baghdad</string>
+		<string>Ayuthaya</string>
+		<string>Kailasa</string>
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use Hiragino Kaku Gothic ProN W3. The portions that are used are mono spaced. -->
+				<string>ja</string>
+				<string>HiraKakuProN-W3</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use STHeiti TC -->
+				<string>zh-Hant</string>
+				<string>STHeitiTC-Light</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STHeiti SC -->
+				<string>zh-Hans</string>
+				<string>STHeitiSC-Light</string>
+			</array>
+			<array>
+				<!-- for Korean, use AppleGothic Regular -->
+				<string>ko</string>
+				<string>AppleGothic</string>
+			</array>
+		</array>
+		<string>BanglaSangamMN</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaSangamMN</string>
+		<string>KhmerSangamMN</string>
+		<string>LaoSangamMN</string>
+		<string>MalayalamSangamMN</string>
+		<string>MyanmarSangamMN</string>
+		<string>OriyaSangamMN</string>
+		<string>SinhalaSangamMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguSangamMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+	
+	<!-- ordered fallback list for cursive style - fallback entity has to be PostScript name -->
+	<key>cursive</key>
+	<array>
+		<string>Apple-Chancery</string>
+		<string>AppleSymbolsFB</string>
+		<string>GeezaPro</string>
+		<string>Thonburi</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>Kokonor</string><!-- Tibetan, Kailasa is the equivalent on iOS -->
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use Hiragino Mincho ProN W3. It's not a cursive font but we do not have "brush" typeface for J. -->
+				<string>ja</string>
+				<string>HiraMinProN-W3</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use BiauKai -->
+				<string>zh-Hant</string>
+				<string>DFKaiShu-SB-Estd-BF</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STKaiti -->
+				<string>zh-Hans</string>
+				<string>STKaiti</string>
+			</array>
+			<array>
+				<!-- for Korean, use Apple Myungjo  -->
+				<string>ko</string>
+				<string>AppleMyungjo</string>
+			</array>
+		</array>
+		<string>BanglaMN</string>
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaMN</string>
+		<string>KhmerMN</string>
+		<string>LaoMN</string>
+		<string>MalayalamMN</string>
+		<string>MyanmarMN</string>
+		<string>OriyaMN</string>
+		<string>SinhalaMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+	
+	<!-- ordered fallback list for fantasy style - fallback entity has to be PostScript name -->
+	<key>fantasy</key>
+	<array>
+		<string>Zapfino</string>
+		<string>AppleSymbolsFB</string>
+		<string>GeezaPro</string>
+		<string>Thonburi</string>
+		<string>DevanagariMT</string><!-- DevanagariSangamMN is the equivalent on iOS -->
+		<string>Kokonor</string><!-- Tibetan, Kailasa is the equivalent on iOS -->
+		<!-- language preferred fallback list - to be reordered according to AppleLanguages preferences -->
+		<array>
+			<!-- language preferred entity - index 0: BCP 47 language code, index 1: PostScript name -->
+			<array>
+				<!-- for Japanese, use Hiragino Mincho ProN W3. It's not a cursive font but we do not have "brush" typeface for J. -->
+				<string>ja</string>
+				<string>HiraMinProN-W3</string>
+			</array>
+			<array>
+				<!-- for Traditional Chinese, use BiauKai -->
+				<string>zh-Hant</string>
+				<string>DFKaiShu-SB-Estd-BF</string>
+			</array>
+			<array>
+				<!-- for Simplified Chinese, use STKaiti -->
+				<string>zh-Hans</string>
+				<string>STKaiti</string>
+			</array>
+			<array>
+				<!-- for Korean, use Apple Myungjo  -->
+				<string>ko</string>
+				<string>AppleMyungjo</string>
+			</array>
+		</array>
+		<string>BanglaMN</string>
+		<string>GujaratiMT</string><!-- GujaratiSangamMN is the equivalent on iOS -->
+		<string>MonotypeGurmukhi</string><!-- GurmukhiMN is the equivalent on iOS -->
+		<string>KannadaMN</string>
+		<string>KhmerMN</string>
+		<string>LaoMN</string>
+		<string>MalayalamMN</string>
+		<string>MyanmarMN</string>
+		<string>OriyaMN</string>
+		<string>SinhalaMN</string>
+		<string>InaiMathi</string><!-- Tamil, TamilSangamMN is the equivalent on iOS -->
+		<string>TeluguMN</string>
+		<string>Mshtakan</string><!-- Armenian -->
+		<string>EuphemiaUCAS</string>
+		<string>PlantagenetCherokee</string>
+	</array>
+	
+</dict>
+</plist>
