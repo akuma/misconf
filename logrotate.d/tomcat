@@ -1,0 +1,11 @@
+# Rotate tomcat's catalina.out
+/opt/tools/tomcat7/logs/catalina.out {
+    rotate 150
+    size 256M
+    dateext
+    missingok
+    notifempty
+    sharedscripts
+    copytruncate
+    compress
+}
